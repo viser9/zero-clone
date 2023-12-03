@@ -23,3 +23,16 @@
     font-size: large;
     cursor: pointer;
 }
+
+.Button-sign-up:hover{
+    background-color: #223449; 
+    border-radius: 3px; 
+    border:100px; 
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color:#ffffffff; 
+    font-size: large;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #eee;
+}
