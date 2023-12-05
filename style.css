@@ -36,3 +36,10 @@
     cursor: pointer;
     box-shadow: 2px 2px 2px #eee;
 }
+
+.list{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 100;
+}
