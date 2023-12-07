@@ -43,3 +43,14 @@
     line-height: 2;
     font-weight: 100;
 }
+
+.inputBox{
+    width: 150px;
+    height: 30px;
+}
+
+.inputBox:focus{
+    outline: none;
+    border-color: rgb(57,124,209);
+    box-shadow: 0 0 1px 0 rgb(57,124,209);
+}

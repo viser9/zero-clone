@@ -64,6 +64,40 @@
                     </div>
                 </section>
             </div>
+            <div style = "background-color:#f4f4f6;margin-left: 300px;margin-right: 300px;padding-left:150px;padding-right: 150px;font-size:  1.5vw;font-family: sans-serif;">
+                <div style="display: flex;justify-content: center;padding-top: 1vw;padding-bottom: 1vw;">
+                    Investment Return & Growth Calculator
+                </div>
+                <div style="display: flex;justify-content: space-around;padding-top: 15px;">
+                    <input type="text" class = "inputBox" id ="Starting Amount" placeholder="Starting Amount">
+                    <input type="text" class = "inputBox" id ="Additional contribution" placeholder="Additional contribution">
+                    <input type="text" class = "inputBox" id ="Rate of Return" placeholder="Rate of Return">
+                    <input type="text" class = "inputBox" id ="Time Period" placeholder="Time Period"> 
+                </div>
+                <div style="display: flex;justify-content: center;padding-top: 1vw;padding-bottom: 1vw;">
+                    <button class="Button-sign-up" onclick="calculate()">
+                        Calculate
+                    </button>
+                </div>
+            </div>
+            <div style = "background-color:#f4f4f6;margin-left: 300px;margin-right: 300px;margin-top: 5px;">
+                <p id="return" style="display: flex;justify-content: center;font-family: sans-serif;font-size: large;padding-top: 0.75vw;padding-bottom: 0.75vw;">
+                    the value of the input is 
+                </p>
+            </div>
         </main>
     </body>
+    <script>
+        function calculate(){
+            var amount = parseFloat(document.getElementById("Starting Amount").value) || 0;
+            var contribution = parseFloat(document.getElementById("Additional contribution").value) || 0;
+            var rate = parseFloat(document.getElementById("Rate of Return").value) || 0;
+            var time = parseFloat(document.getElementById("Time Period").value) || 0;
+
+            // Perform the correct calculation using the declared variables
+            var result = amount + contribution + (amount * rate * time);
+
+            document.getElementById("return").innerHTML = "The calculated value is " + result;
+        } 
+    </script>
 </html>
